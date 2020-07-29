@@ -29,3 +29,5 @@ arrOfDucks.suscribeFunction(huntingNormalDucks)
 arrOfDucks.suscribeFunction(huntingWildDucks)
 arrOfDucks.suscribeFunction(huntingCloudDucks)
 arrOfDucks.fireFunctions()
+
+//Comentario desde diego_branch
