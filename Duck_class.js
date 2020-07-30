@@ -64,6 +64,12 @@ const FlyLowStrategy = function () {
     }
 }
 
+const FlyQuitelyStrategy = function () {
+    this.fly = function(){
+        return "this duck flys quitely"
+    }
+}
+
 
 //-----------------------------the strategies to inyect in quack method---------------------------
 
@@ -79,7 +85,7 @@ const QuackSoftStrategy = function () {
     }
 }
 
-const QuackWierdStrategy = function () {
+const QuackWeirdStrategy = function () {
     this.quack = function () {
         return "this duck quack really soft"
     }
@@ -87,10 +93,11 @@ const QuackWierdStrategy = function () {
 //------------------------instances of the methods --------------------------
 const flyHighStrategy = new FlyHighStrategy()
 const flyLowStrategy = new FlyLowStrategy()
+const flyQuitelyStrategy = new FlyQuitelyStrategy()
 
 const quackLoudStrategy = new QuackLoudStrategy()
 const quackSoftStrategy = new QuackSoftStrategy()
-const quackWeirdStrategy = new QuackWierdStrategy()
+const quackWeirdStrategy = new QuackWeirdStrategy()
 
 
 module.exports = {
@@ -98,6 +105,7 @@ module.exports = {
     flyStrategies: {
         flyHighStrategy,
         flyLowStrategy,
+        flyQuitelyStrategy
     },
     quackStrategies: {
         quackLoudStrategy,
