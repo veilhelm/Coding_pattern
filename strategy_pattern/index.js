@@ -35,3 +35,4 @@ arrOfDucks.suscribeFunction(huntingCloudDucks)
 arrOfDucks.fireFunctions()
 
 //Comentario desde diego_branch
+//hola a todos, esto es un conflicto armado 
