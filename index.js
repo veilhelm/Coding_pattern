@@ -12,15 +12,11 @@ wildDuck.setQuackStrategy(quackStrategies.quackLoudStrategy)
 
 const cityDuck = new Duck("city")
 cityDuck.setFlyingStrategy(flyStrategies.flyLowStrategy)
-cityDuck.setQuackStrategy(quackStrategies.quackWeirdStrategy)
-
-const quiteDuck = new Duck("quite")
-quiteDuck.setFlyingStrategy(flyStrategies.flyQuitelyStrategy)
+cityDuck.setQuackStrategy(quackStrategies.quackWierdStrategy)
 
 allDucks.push(normalDuck)
 allDucks.push(wildDuck)
 allDucks.push(cityDuck)
-allDucks.push(quiteDuck)
 
 allDucks.forEach(duck => {
 console.log(duck.display())
@@ -33,5 +29,3 @@ arrOfDucks.suscribeFunction(huntingNormalDucks)
 arrOfDucks.suscribeFunction(huntingWildDucks)
 arrOfDucks.suscribeFunction(huntingCloudDucks)
 arrOfDucks.fireFunctions()
-
-//Comentario desde diego_branch
